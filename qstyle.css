@@ -1,0 +1,119 @@
+.questionSection{
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
+.accordion {
+  cursor:help;
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+.panel {
+  padding: 0 18px;
+  background-color: rgba(95, 51, 51, 0.1);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear 0.2s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.questionDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.questionOne{
+  background-color: rgb(255,255,102);
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.deleteBtn{
+  background-color: #9f1ceb;
+  padding: 10px;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font: 15px;
+  color: white;
+  font-weight: 700;
+}
+.delete{
+  display: none;
+}
+.none{
+  display: none;
+}
+
+.tablink {
+  background-color: rgb(20, 131, 175);
+  color: white;
+  float: none;
+  border: solid rgb(95, 92, 92);
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+
+#heder-red {background-color:red;}
+#header-green {background-color:green;}
+#header-blue {background-color:blue;}
+
+.sidenav {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  left: 10px;
+  background:none;
+  overflow-x: hidden;
+  padding: 8px;
+  padding-top:100px;
+
+}
+.sidenav button {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+.sidenav button:hover {
+  color: #064579
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav h2 {font-size: 18px;}
+}
+.lable {
+ margin-bottom: 20px;
+}
+

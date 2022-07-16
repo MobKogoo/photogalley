@@ -1,0 +1,87 @@
+.questionSection{
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+.panel {
+  padding: 0 18px;
+  background-color: rgb(128,128,128,0.1);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear 0.2s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.questionDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.questionOne{
+  background-color: rgb(255,255,102);
+  padding: 30px;
+  margin-top: 10px;
+}
+.deleteBtn{
+  background-color: #fc4445;
+  padding: 10px;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font: 15px;
+  color: white;
+  font-weight: 700;
+}
+.delete{
+  display: none;
+}
+.none{
+  display: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background:none;
+  overflow-x: hidden;
+  padding: 8px;
+  padding-top:100px;
+
+}
+.sidenav button {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+.sidenav button:hover {
+  color: #064579
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

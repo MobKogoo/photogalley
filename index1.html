@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <title>KOGO</title>
+</head>
+<body>
+  <header id="mainheader">
+      <div class="container"> 
+            <div id="header" class="header" onclick="javascript:myFunction();"> 
+                    <div id="left">
+                            <div id="social">
+                                 <img src="./images/social.png" alt="social-icon" width="70px">
+                            </div>
+                            <!-- social_icons list -->
+                            <div id="social_icons" class="social_icons">
+                                <ul>
+                                    <li id="icon_1"> <a href=""> <i class="fab fa-facebook fa-2x"></i> </a></li>
+                                    <li id="icon_2"><a href="">  <i class="fab fa-github fa-2x"></i> </a></li>
+                                    <li id="icon_3"><a href="">  <i class="fab fa-twitter fa-2x"></i> </a></li>
+                                    <li id="icon_4"><a href="">  <i class="fab fa-instagram fa-2x"></i></a></li>
+                                    <li id="icon_5"><a href="">  <i class="fab fa-youtube fa-2x"></i> </a></li> 
+                                </ul>
+                            </div> 
+                    </div>
+                    <!-- faq.! -->
+                    <div class="faq" >
+                        <p> <a href="./index2.html">FAQ</a></p>
+                    </div>
+                     <!-- pic logo-->
+                     <div class="pic-logo ">
+                        <img src="images/kogo.png" alt="pic-kogo" width="90px">
+                        
+                    </div>
+                    <div>
+                        <h2 class="main-forum">მთავარი</h2>
+                    </div>
+                   
+                    <!-- text logo -->
+                    <div id="center">
+                          <h1 id="logo"> KOGO</h1>
+                    </div>
+                    <div id="right">
+                        <!-- burger_menu icon -->
+                        <div id="burger_menu_icon">
+                            <div class="line first_line"></div>
+                            <div  class="line second_line" ></div>
+                            <div  class="line third_line"></div>
+                        </div>
+                        <!-- burger_menu content -->
+                        <div id="burger_menu" class="burger_menu_nav">
+                            <ul>
+                                <li><a href=""> home</a></li>
+                                <li><a href=""> about </a></li>
+                                <li> <br> <span> tel:5995995999</span> <br>
+                                    <span>iraklikogua@gmail.com</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                     </div>
+            </div>
+      </div>
+  </header>
+   <section>
+       <div class="container">
+                       <!-- registration form -->
+                 <div class="reg-form">
+                    <form action="" class="reg">
+                        <br>
+                    <h1>Sign Up</h1>
+                        <legend><span class="number">1</span>Your basic info</legend>
+                        <label for="firstName" class="lable">სახელი:</label>
+                        <input type="text" class="input" id="firstName">
+
+                        <label for="lastName" class="label">გვარი</label>
+                        <input type="text"  class="input" id="lastName">
+                    
+                        <label for="mail"class="label">Email:</label>
+                        <input type="email" class="input" id="Email">
+                    
+                        <label for="password" class="label">Password:</label>
+                        <input type="password" id="password" id="user_Password">
+                
+                        <label>Age:</label>
+                        <input type="radio" id="under_18" value="under_18" >
+                        <label for="under_18" class="light">Under 18</label>
+                        <br>
+                        <input type="radio" id="over_18" value="over_18" >
+                        <label for="over_18" class="light">18 or older</label>
+             
+                    <legend><span class="number">2</span>Your profile</legend>
+                <label for="aboutUs"  class="lable" >ბიოგრაფია:</label>
+            <textarea id="aboutUs"  class="input"  type="text">
+            </textarea>
+        <button type="button"class="buttonClear" id="submitInfo">დადასტურება</button>
+        </form>
+    </div>
+
+    <section class="aboutUs">
+        <div class="aboutDiv" id="aboutDiv">
+            <h2 class="h2">ინფორმაცია თქვენს შესახებ</h2>
+            <h3 class="h3" id="h3Name">სახელი : </h3>
+            <h3 class="h3" id="h3lastname">გვარი : </h3>
+            <h3 class="h3" id="h3email">ელფოსტა : </h3>
+            <h3 class="h3" id="h3aboutUs">ბიოგრაფია:</h3>
+            <button type="button" class="buttonclear" id="clearAll">გასუფთავება </button>
+        </div>
+    </section>
+                        
+    <script src="./main.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+  integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+  crossorigin="anonymous"></script>
+</body>
+</html>

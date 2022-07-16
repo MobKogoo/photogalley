@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./qstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class=conteiner>
+        <div id="heder-red" class="tabcontent">
+            <h2>კითხვები და პასუხები</h2>
+        
+          </div>
+          
+          <div id="header-green" class="tabcontent">
+            <h2>კითხვები და პასუხები</h2>
+        
+          </div>
+          
+          <div id="header-blue" class="tabcontent">
+            <h2>კითხვები და პასუხები</h2>
+          </div>
+        </div>
+    </header>
+        <h1 id="heding" class="tabcontent">კითხვები</h1>
+  <section class="questionSection container">
+    <div class="questionDiv container">
+        <div>
+            <button class="accordion">ჩამოთვლილთაგან, რომელია „საქართველოს სისხლის სამართლის კოდექსით“ გათვალისწინებული განგრძობადი დანაშაული?</button>
+            <div class="panel">
+                <p>
+                    დანაშაული, რომლის ჩადენა იწყება მოქმედებით ან უმოქმედობით და რომელიც შემდეგ უწყვეტად ხორციელდება;
+                </p>
+                <button type="button" id="deleteBtn1" class="deleteBtn">remove</button>
+            </div>
+            <button class="accordion">„საქართველოს სისხლის სამართლის კოდექსის“ თანახმად,  
+                განა­ჩენთა ერთ­ო­ბ­ლი­ობის დროს საბოლოო სასჯელად დანიშნული თავისუ­ფლე­ბის აღკვეთის ვადა არ უნდა აღემატებოდეს:</button>
+            <div class="panel">
+                <p>
+                    25 წელს
+                </p>
+                <button type="button" id="deleteBtn2" class="deleteBtn">remove</button>
+            </div>
+            <button class="accordion">„საქართველოს სისხლის სამართლის კოდექსის“ თანახმად, რა შემთხვევაშია დაუშვებელი დანიშნული სასჯელის პირობითად ჩათვლა?</button>
+            <div class="panel">
+                <p>
+                    თუ მსჯავრდებულმა ჩაიდინა განსაკუთრებით მძიმე ან განზრახი მძიმე დანაშაული;
+                </p>
+
+                <button type="button" id="deleteBtn3" class="deleteBtn">remove</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="sidenav">
+            <label></label>
+              <button class="tablink" onclick="openhead('heder-red', this, 'red')" id="defaultOpen">red</button>
+              <button class="tablink" onclick="openhead('header-green', this, 'green')">green</button>
+              <button class="tablink" onclick="openhead('header-blue', this, 'blue')">blue</button>
+</section>
+  <script src="./qmain.js"></script>
+</body>
+</html>
